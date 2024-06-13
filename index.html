@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<style>
+   
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width:90%;
+  border: none;
+  text-align: -webkit-center;
+  outline: none;
+  font-size: 15px;
+  margin :50px;
+}
+.active, .collapsible:hover {
+  background-color: #555;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  margin :60px;
+}
+table, th, td {
+  border:1px solid black;
+}
+.bg-img {
+    background-image: url('img1.jpg');
+    height : 300%;
+    background-position: center;
+    background-size: 100vw 100vh;  
+    background-attachment: fixed;
+
+}
+</style>
+<html> 
+    <head>
+        <title>HTML Coding Challenge</title>
+    </head>
+    <body>
+        <div  class="bg-img">
+            <h1  style="text-align: center;color:#FFFFFF;">My Favourite Hobby</h1>
+            <button type="button" class="collapsible">Why I Love It</button>
+            <div class="content">
+                <p>Dance is my favourite hobby and I enjoy dancing a lot. I started dancing when I was five years old and when I got older; my parents enrolled me in dance classes to pursue this passion.
+
+                 I cannot go a day without dance, that’s how much I love dancing.Dancing makes me feel happy and relaxed, thus I love to dance. I always participate in dance competitions at my school and have even won a few.
+
+                 Dance became my passion from an early age. Listening to the beats of a dance number,. Even when I am sad, I put on music to dance to vent out my feelings.
+                 <img src="img2.jpg" alt="dance1" style='width:25%;height:25%;'>
+            
+                 <table style="width:100%">
+                    <tr>
+                      <th>Resource Name</th>
+                      <th>Resource Description</th>
+                      <th>Resource Links</th>
+                      
+                    </tr>
+                    <tr>
+                      <td>Books</td>
+                      <td><p>you tube where you can learn free dance classes through books</p></td>
+                      <td><a href="https://ia904701.us.archive.org/2/items/bookofthedance00gent/bookofthedance00gent.pdf" target="_blank">Dance Book!</a></td>
+                      
+                    </tr>
+                    <tr>
+                      <td>Website</td>
+                      <td><p>you tube where you can learn free dance classes through website</p></td>
+                      <td><a href="https://ccdance.org/the-places-youll-go/dance-forms/ballet-classes/?gad_source=1&gclid=Cj0KCQjwsaqzBhDdARIsAK2gqnfDpoXnazJXAqbLJ1GD_Cwu28LyVThcQqlrz3FoAx5FKBoVbaI8mOsaAhXGEALw_wcB" target="_blank">Free Dance Website!</a></td>
+                      
+                    </tr>
+                    <tr>
+                        <td>Tools</td>
+                        <td><p>you tube where you can learn free dance classes</p></td>
+                        <td>
+                            <iframe width="300" height="150" src="https://www.youtube.com/embed/DI7P_uHAjeY?list=PLV3v0Ysm26sNk2CHfNJTvJ3hweTmwQO-P" title="HIP HOP Dance Choreography Tutorial for Beginners - Free Dance Class at Home" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </td>
+                        
+                      </tr>
+                  </table>
+                </p>
+                
+                  
+            </div>
+            <button type="button" class="collapsible">How to Get Started</button>
+            <div class="content">
+                <p>Start by deciding what style of dance you want to learn. There are tons out there — individual dance styles like ballet, jazz, and hip hop, and partner styles like ballroom and salsa. Definitely figure out what type you're interested in before you get started, which will make it easier to find the best resources.
+                     Next, decide whether you want to learn basic technique or a specific dance. Most dance styles have foundational movements that trained dancers practice repeatedly to build their strength, endurance, and skill. However, some folks who are just learning for fun might prefer learning a specific dance, 
+                     <img src="img3.jpg" alt="dance1" style='width:25%;height:25%;'>
+                </p>
+
+             
+             
+            </div>
+        </div>
+        
+    </body>
+</html>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
